@@ -1,4 +1,4 @@
-name: ci
+name: ci moquiprod docker image
 
 on:
   push:
