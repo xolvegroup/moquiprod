@@ -3,7 +3,7 @@
 echo "Usage: docker-build.sh [<moqui directory like ../..>] [<group/name:tag>]"
 
 MOQUI_HOME="${1:-../..}"
-NAME_TAG="${2:-moqui}"
+NAME_TAG="${2:-moquiprod}"
 
 if [ -f $MOQUI_HOME/moqui-plus-runtime.war ]
 then
