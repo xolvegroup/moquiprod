@@ -36,4 +36,4 @@ jobs:
           context: .
           ##file: ./docker/simple/Dockerfile
           push: true
-          ##tags: ${{ secrets.DOCKERHUB_USERNAME }}/moquiprod:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/moquiprod:latest
