@@ -19,8 +19,12 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           
-      - name: Clone runtime
-         run: |
+      - name: run script for cloning
+        run: ./github-script.sh
+      - name: list files
+        run: |
+           echo list files
+           ls -lart
           
       -
         name: Set up Docker Buildx
