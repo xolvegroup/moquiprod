@@ -16,3 +16,6 @@ cd ../..
 ./gradlew build
 ./gradlew load
 ./gradlew addRuntime
+echo "building image...."
+cd docker/simple
+sh ./docker-build.sh
