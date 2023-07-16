@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           
       - name: run script for cloning
-        run: ./github-script.sh
+        run: sh ./github-script.sh
       - name: list files
         run: |
            echo list files
