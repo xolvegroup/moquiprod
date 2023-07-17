@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+#set -x
 
 rm -rf moquiprod
 echo "download from repository"
