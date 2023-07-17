@@ -34,6 +34,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./home/runner/work/moquiprod/moquiprod/docker/simple/Dockerfile
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/moquiprod:latest
