@@ -16,5 +16,7 @@ cd ../..
 ./gradlew build
 ./gradlew load
 ./gradlew addRuntime
-unzip moqui-plus-runtime.war /docker/simple/
-cd docker/simple
+echo "Path for current"
+pwd
+#unzip moqui-plus-runtime.war /docker/simple/
+#cd docker/simple
