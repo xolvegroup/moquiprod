@@ -16,7 +16,5 @@ cd ../..
 ./gradlew build
 ./gradlew load
 ./gradlew addRuntime
-mv moqui-plus-runtime.war /docker/simple/
+unzip moqui-plus-runtime.war /docker/simple/
 cd docker/simple
-echo "unzip moqui runtime"
-unzip moqui-plus-runtime.war
