@@ -16,5 +16,5 @@ cd ../..
 ./gradlew build
 ./gradlew load
 ./gradlew addRuntime
-echo "unzip moqui runtime"
-unzip moqui-plus-runtime.war
+#echo "unzip moqui runtime"
+#unzip moqui-plus-runtime.war
