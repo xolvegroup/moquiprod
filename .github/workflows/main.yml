@@ -33,7 +33,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v4
         with:
-          context: .
-          file: ./Dockerfile
+          context: /moquiprod/docker/simple
+          file: /moquiprod/docker/simple/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/moquiprod:latest
