@@ -21,7 +21,7 @@ pwd
 ls -lart
 #unzip moqui-plus-runtime.war /docker/simple/
 #cd docker/simple
-if unzip -q ../moquiprod/moqui-plus-runtime.war; then
+if unzip -q ../moqui/moqui-plus-runtime.war; then
     echo "downloaded and build successfully"
 else
     echo "compile/build failed"
