@@ -22,7 +22,7 @@ jobs:
       - name: run script for cloning
         run: sh ./github-script.sh
       - name: Build Docker image
-        run: docker build -t mmoquiprod:${{ github.sha }} .
+        run: sh ./docker-build.sh
 
       - name: Log in to Docker Hub (replace with your container registry)
         run: echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login --username xolvegroup --password-stdin
