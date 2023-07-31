@@ -14,9 +14,9 @@ cd runtime/lib/
 wget https://jdbc.postgresql.org/download/postgresql-42.2.9.jar
 cd ../..
 ./gradlew build
-./gradlew load
+#./gradlew load
 ./gradlew addRuntime
 echo "Path for current"
 pwd
 ls -lart
-#unzip -q moqui-plus-runtime.war -d /docker/simple/
+unzip -q moqui-plus-runtime.war
