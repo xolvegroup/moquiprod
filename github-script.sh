@@ -19,6 +19,6 @@ cd ../..
 echo "Path for current"
 pwd
 ls -lart
-unzip -q moqui-plus-runtime.war -d /docker/simple/
+#unzip -q moqui-plus-runtime.war -d /docker/simple/
 #cd docker/simple
 
