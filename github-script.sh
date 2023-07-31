@@ -19,4 +19,4 @@ cd ../..
 echo "Path for current"
 pwd
 ls -lart
-unzip -q moqui-plus-runtime.war
+unzip -n moqui-plus-runtime.war
