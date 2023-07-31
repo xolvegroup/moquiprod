@@ -21,11 +21,11 @@ jobs:
           
       - name: run script for cloning
         run: sh ./github-script.sh
-      - name: list files
-        run: |
-           echo list files
-           ls -lart
-          
-      -
-        name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+      - name: Build Docker image
+        run: docker build -t mmoquiprod:${{ github.sha }} .
+
+      - name: Log in to Docker Hub (replace with your container registry)
+        run: echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login --username xolvegroup --password-stdin
+
+      - name: Push Docker image to registry (replace with your container registry)
+        run: docker push xolvegroup/moquiprod:${{ github.sha }}
