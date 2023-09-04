@@ -2,7 +2,7 @@ name: moquiprod ci for docker image
 
 on:
   repository_dispatch:
-    types:  [my-event]
+    types:  [my-event-wm , my-event-sales]
 
 jobs:
   docker:
