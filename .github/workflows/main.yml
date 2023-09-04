@@ -1,9 +1,8 @@
-name: moquiprod ci
+name: moquiprod ci for docker image
 
 on:
-  push:
-    branches:
-      - "main"
+  repository_dispatch:
+    types:  [my-event]
 
 jobs:
   docker:
