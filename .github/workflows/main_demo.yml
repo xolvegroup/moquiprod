@@ -2,7 +2,7 @@ name: moquidemo ci for docker image
 
 on:
   repository_dispatch:
-    types:  [my-event-wm , my-event-sales]
+    types:  [my-event-wm-demo , my-event-sales-demo]
 
 jobs:
   docker:
