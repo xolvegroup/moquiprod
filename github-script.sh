@@ -7,7 +7,7 @@ echo "download from repository"
 ./gradlew getComponent -Pcomponent=HiveMind
 ./gradlew downloadOpenSearch
 cd runtime/component
-git clone https://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@github.com/xolvegroup/xolve-theme.git
+git clone https://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@github.com/xolvegroup/xolve-theme.git
 git clone https://github.com/xolvegroup/WorkManagement.git
 git clone https://github.com/xolvegroup/Sales.git
 cd runtime/lib/
